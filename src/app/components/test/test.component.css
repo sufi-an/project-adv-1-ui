@@ -1,0 +1,52 @@
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+body {
+	font-family: arial;
+}
+
+h3 {
+	margin: 0;
+	padding: 0;
+}
+
+.sort-links {
+	margin-bottom: 10px;
+}
+
+.sort-links a {
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	background-color: slategray;
+	padding: 3px 10px;
+}
+
+.container {
+	position: relative;
+	height: 500px;
+}
+
+.item {
+	position: absolute;
+	left: 0;
+	width: 500px;
+	height: 50px;
+	text-align: left;
+	color: #555;
+	-webkit-transition: top 1s ease-out, opacity 1s;
+	-moz-transition: top 1s ease-out, opacity 1s;
+	padding: 15px;
+	background-color: #eee;
+	border: solid 1px #999;
+}
+
+.moving {
+	opacity: 0.25;
+	z-index: 10;
+}
+

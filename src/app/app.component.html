@@ -1,66 +1,14 @@
 <div>
-  <h1>Name</h1>
-  <img src="https://imgs.search.brave.com/1oifODwdi5_xTZDCxXLqMcDRKohBHlOBXMIoGzYsCDI/rs:fit:713:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC43/OENFSEVCRkUtWl9J/TWM1c0JjSEJ3SGFF/NyZwaWQ9QXBp" alt="profile-image">
-  <ul>
-      <li>
-          <h3>Introduction</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor aliquam blanditiis necessitatibus itaque ea quasi nemo earum cumque aspernatur, officia obcaecati? Harum vitae ad iste hic tempora, ipsum laboriosam dolores.</p>
-      </li>
-      <li>
-          <h3>Address</h3>
-          <p>House : 68/3 , Road : 8 , Basundhara R/A ,Dhaka 1204  </p>
-      </li>
-      <li>
-          <h3>Educational Qualification</h3>
-          <ol>
-              <li>
-                  SSC : 1998 <br> Adamji Cant' School
-              </li>
-              <li>
-                  HSC : 2000 <br> Dhaka College
-              </li>
-          </ol>
-      </li>
-      <li>
-          <h3>Skills</h3>
-          <ol>
-              
-              <li>
-                  Html
-              </li>
-              <li>
-                  Brain Storming
-              </li>
-          </ol>
-      </li>
-      <li>
-          <h3>Experiance</h3>
-          <ol>
-              <li>Volunteering</li>
-              <li>Event Management</li>
-              <li>Leadership</li>
-          </ol>
-      </li>
-      <li>
-          <h3>Hobby</h3>
-          <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt ea numquam esse doloribus, aliquam adipisci vero aut omnis excepturi debitis porro architecto corrupti illum nulla similique, consectetur at, aliquid ab? </p>
-      </li>
-      <li>
-          <h3>Contact Info</h3>
-          <ul>
-              <li>
-                  <a href="https://www.facebook.com">Facebook</a>
-              </li>
-              <li>
-                  <a href="https://www.google.com/">Google</a>
-              </li>
-              <li>
-                  <a href="https://github.com/d3-c0d3">
-                      <img src="./assets/software-engineer.jpg" alt="spam-link">
-                  </a>
-              </li>
-          </ul>
-      </li>
-      
-  </ul>
+    <app-test></app-test>   
+    <div *ngFor="let i of userList" >
+        <div>Before Calling Component</div>
+        <app-new-test [master]=i (userName)="onClickHandler($event)"></app-new-test>
+        <div>After Calling Component</div>
+       
+    </div>
 </div>
+
+<!-- 
+    parent to child
+    child to parent
+-->

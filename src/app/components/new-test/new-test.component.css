@@ -1,0 +1,7 @@
+.info-card{
+    width: 5rem;
+    height: 58px;
+    background-color: rgb(218, 214, 214);
+    box-sizing: border-box;
+    box-shadow: 2px 3px 4px #777;
+}
