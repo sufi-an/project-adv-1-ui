@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -6,6 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  constructor(
+    private router:Router
+  ){
+
+  }
   btn1Name:string="Show output";
   counter:number=0;
   userList:string[]=[
@@ -21,12 +27,16 @@ export class AppComponent {
   }
   onClickHandler(str:string){
     console.log(str+" was clicked")
+    this.router.navigate(['header'])
   }
-
+  changeRoute(){
+    this.router.navigate(['/contact'])
+  }
 }
 
 /* ng generate component path/componentname */
 /* ng g c path/componentName */
+/* ng g m path/modulename --routing */
 /* ctrl+shift+p */
 
 /* 
