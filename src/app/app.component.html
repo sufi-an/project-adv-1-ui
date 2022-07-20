@@ -1,16 +1,3 @@
 <div>
-    <app-test></app-test>   
-    <button routerLink="/contact" >Change Route</button>
-    <div *ngFor="let i of userList" >
-        <div>Before Calling Component</div>
-        <app-new-test [master]=i (userName)="onClickHandler($event)"></app-new-test>
-        <div>After Calling Component</div>
-       
-    </div>
+  <router-outlet></router-outlet>
 </div>
-
-<router-outlet></router-outlet>
-<!-- 
-    parent to child
-    child to parent
--->
