@@ -1,0 +1,47 @@
+{
+  "results": [
+    {
+      "gender": "male",
+      "name": { "title": "Mr", "first": "Waldemar", "last": "Fürst" },
+      "location": {
+        "street": { "number": 693, "name": "Mühlenweg" },
+        "city": "Oldenburg In Holstein",
+        "state": "Nordrhein-Westfalen",
+        "country": "Germany",
+        "postcode": 23313,
+        "coordinates": { "latitude": "-47.4675", "longitude": "-43.7459" },
+        "timezone": {
+          "offset": "0:00",
+          "description": "Western Europe Time, London, Lisbon, Casablanca"
+        }
+      },
+      "email": "waldemar.furst@example.com",
+      "login": {
+        "uuid": "f371ba92-65f7-41cd-941e-147c4ddf18f9",
+        "username": "bigtiger185",
+        "password": "crazy1",
+        "salt": "zt9CgX12",
+        "md5": "d371ee452e529a0209f5b3786a07a9da",
+        "sha1": "89c07e515d817307f6c8de8dd5713317e3e201b4",
+        "sha256": "a75fba9befce95f4b5a695a880f04744640d2aa29b92ca4f6b1fe8c6f624d541"
+      },
+      "dob": { "date": "1960-04-02T00:27:00.294Z", "age": 62 },
+      "registered": { "date": "2011-11-04T18:54:35.125Z", "age": 10 },
+      "phone": "0288-9159690",
+      "cell": "0178-5517954",
+      "id": { "name": "SVNR", "value": "54 010460 F 416" },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/77.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/77.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/77.jpg"
+      },
+      "nat": "DE"
+    }
+  ],
+  "info": {
+    "seed": "e17a46b71b46204b",
+    "results": 1,
+    "page": 1,
+    "version": "1.4"
+  }
+}
