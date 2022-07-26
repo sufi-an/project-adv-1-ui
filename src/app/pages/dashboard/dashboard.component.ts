@@ -8,6 +8,7 @@ import { UserService } from 'src/app/services/user.service';
 })
 export class DashboardComponent implements OnInit {
   user:any;
+  users:any[]=[]
   constructor(
     private userService:UserService
   ) { }
@@ -18,6 +19,15 @@ export class DashboardComponent implements OnInit {
       console.log(res.results)
       this.user=res.results;
     })
+
+    this.userService.getRandomNames()
+    .subscribe(res=>{
+      console.log(res.contents);
+      console.log(res.success);
+      this.users=res.contents;
+
+    })
+
   }
 
 }

@@ -1,0 +1,11 @@
+.card-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.example-card {
+    max-width: 400px;
+    box-sizing: border-box;
+    box-shadow: 2px 3px 5px #777;
+    margin-left: 1.3rem;
+  }
